@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import url("fonts.css");
+@import url("normalize.css");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* CSS Reset */
+
+html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.back {
+  background-color: gray;
+}
+.container {
+  width: 526px;
+  margin: 0 auto;
+  /* background-color: #9BBAD7; */
+}
+
+/* 추가속성들 */
+
+.imges-size {
+  position: absolute;
+  width: 65px;
+  border: 1px solid #1f4ba5;
+  border-radius: 50%;
+}
+.anwser-size {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+.me-time-size {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+.youname-size {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background-color: yellow;
+}
+.you-time-size {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+/* header 영역 */
+
+header {
+  position: relative;
+  background-color: #93B1CD;
+  height: 109px;
+}
+.myimges {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 30px;
+  width: 76px;
+  border: 1px solid #1f4ba5;
+  border-radius: 50%;
+}
+.name {
+  position: absolute;
+  left: 117px;
+  top: 29px;
+}
+.bar-menu {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+}
+.bar {
+  margin-right: 10px;
+}
+.size {
+  margin-right: 10px;
+}
+.bar::before {
+  font-family: "fontello";
+  content: '\E80A';
+  color: #546069;
+}
+.size::before {
+  font-family: "fontello";
+  content: '\E80B'
+}
+.close::before {
+  font-family: "fontello";
+  content: '\E809'
+}
+.Toolbar {
+  position: absolute;
+  top: 66px;
+  left: 117px;
+}
+.text {
+  margin-right: 13px;
+}
+.imges {
+  margin-right: 13px;
+}
+.text::before {
+  font-family: "fontello";
+  content: '\F0F6'
+}
+.imges::before {
+  font-family: "fontello";
+  content: '\F1C5'
+}
+.Search::before {
+  font-family: "fontello";
+  content: '\E800'
+}
+.toolbar2 {
+  position: absolute;
+  top: 60px;
+  right: 17px;
+}
+.alarm {
+  margin-right: 13px;
+}
+.alarm::before {
+  font-family: "fontello";
+  content: '\E801'
+}
+.tap::before {
+  font-family: "fontello";
+  content: '\E802'
+}
+
+/* 메인테그 */
+
+main {
+  background-color: #9BBAD7;
+  height: 630px;
+}
+.main-header {
+  border: 1px solid #9BBAD7;
+  position: relative;
+}
+.line {
+  margin-top: 15px;
+  border-bottom: 1px solid #809aac;
+}
+.date {
+  position: absolute;
+  top: 5px;
+  right: 166px;
+  background-color: #9BBAD7;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.you {
+  margin-top: 39px;
+  margin-left: 370px;
+}
+.imges1 {
+  top: 100px;
+  left: 28px;
+}
+.me {
+  margin-top: 17px;
+  margin-left: 104px;
+}
+.you1 {
+  margin-top: 38px;
+  margin-left: 370px;
+}
+.imges2 {
+  margin-top: 30px;
+  left: 28px;
+}
+.me1 {
+  margin-top: 37px;
+  margin-left: 104px;
+}
+
+/* footer메뉴 */
+
+footer {
+  background-color: white;
+  height: 140px;
+}
+.search {
+  width: 400px;
+  height: 100px;
+}
+.send {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background-color: yellow;
+  margin-left: 30px;
+}
+.footer-menu {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.smile {
+  margin-right: 14px;
+}
+.add {
+  margin-right: 14px;
+}
+.Drawing {
+  margin-right: 14px;
+}
+.smile::before {
+  font-family: "fontello";
+  content: '\F118'
+}
+.add::before {
+  font-family: "fontello";
+  content: '\E807'
+}
+.Drawing::before {
+  font-family: "fontello";
+  content: '\F1C5'
+}
+.call::before {
+  font-family: "fontello";
+  content: '\E806'
+}
+.transparency {
+  position: absolute;
+  margin-left: 291px;
+  width: 90px;
+}
