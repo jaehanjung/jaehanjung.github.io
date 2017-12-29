@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+.top {
+  background-color: #4682B4;
+  text-align: center;
+  padding: 20px;
+}
+.top div:nth-child(2) {
+  font-size: 3em;
+}
+.main {
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.main span {
+  display: block;
+  font-family: 'Montserrat';
+}
+.rgb-size {
+  font-size: 300%;
+}
+.bottom {
+  flex-grow: 1;
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+}
+.bottom>p, .bottom .score {
+  font-family: 'Montserrat';
+  font-size: 17px;
+  line-height: 26px;
+}
+.game-center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rgb-text {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: 'Source Code Pro';
+}
+.box {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.65s ease;
+}
+.box.show {
+  transform: scale(46);
+}
+.box:last-child {
+  margin-right: 0;
+}
+.boxes {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-title {
+  font-size: 52px;
+  line-height: 62px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.modal.show {
+  display: flex;
+}
+.modal-button {
+  display: inline-block;
+  margin-top: 50px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 13pt;
+}
