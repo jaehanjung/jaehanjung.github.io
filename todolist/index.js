@@ -22,7 +22,7 @@ function add() {
 
   const removeButtonEl = document.createElement('div');
   itemEl.appendChild(removeButtonEl);
-  removeButtonEl.textContent = 'X';
+  removeButtonEl.textContent = 'x';
 
   removeButtonEl.addEventListener('click', e => {
     listEl.removeChild(itemEl);

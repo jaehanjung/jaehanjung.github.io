@@ -1,4 +1,40 @@
 @charset "utf-8";
+.container {
+  text-align: center;
+  background-color: #00C73C;
+  color: #ffffff;
+}
+#todo-input {
+  margin-left: 20%;
+  float: left;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 50%;
+}
+#add-button {
+  float: left;
+  height: 47px;
+  width: 10%;
+  font-size: 16px;
+  background-color: #00C73C;
+  color: #ffffff;
+}
+button {
+  padding: 0;
+  margin: 0;
+}
 .complete {
+  text-decoration: line-through;
   color: red;
+}
+.clearfix::after {
+  content: "";
+  background-color: olive;
+  clear: both;
+  display: block;
+}
+#todo-list {
+  padding: 5px 10px 5px 10px;
+  display: inline-block;
+  text-align: center;
 }
